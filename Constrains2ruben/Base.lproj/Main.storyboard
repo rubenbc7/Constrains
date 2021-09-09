@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Constrains2ruben" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Os-dj-Noo" userLabel="Contenedor bodega">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="406"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bodega: Aurrera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPy-Pf-eJU">
+                                        <rect key="frame" x="100.66666666666669" y="49" width="175" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="warehouse" translatesAutoresizingMaskIntoConstraints="NO" id="7lu-JG-yAN">
+                                        <rect key="frame" x="16" y="95" width="343" height="295"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.3796015895" green="0.72303956079999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="7lu-JG-yAN" firstAttribute="top" secondItem="CPy-Pf-eJU" secondAttribute="bottom" constant="16" id="4Qn-6i-mtO"/>
+                                    <constraint firstItem="7lu-JG-yAN" firstAttribute="leading" secondItem="0Os-dj-Noo" secondAttribute="leading" constant="16" id="OjJ-gv-5j6"/>
+                                    <constraint firstAttribute="trailing" secondItem="7lu-JG-yAN" secondAttribute="trailing" constant="16" id="X0o-BR-Sr5"/>
+                                    <constraint firstAttribute="bottom" secondItem="7lu-JG-yAN" secondAttribute="bottom" constant="16" id="k2a-3D-VTE"/>
+                                    <constraint firstItem="CPy-Pf-eJU" firstAttribute="centerX" secondItem="0Os-dj-Noo" secondAttribute="centerX" id="zaH-Hk-aRP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rM7-K3-C9o" userLabel="Contenedor temperatura">
+                                <rect key="frame" x="0.0" y="406" width="375" height="406"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZf-st-n6s">
+                                        <rect key="frame" x="70.666666666666671" y="139.66666666666663" width="235.33333333333331" height="128"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="107"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heat" translatesAutoresizingMaskIntoConstraints="NO" id="m1d-3l-kIh">
+                                        <rect key="frame" x="143" y="298.66666666666663" width="89.666666666666686" height="97.333333333333314"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.38950002500000003" blue="0.69644241299999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ZZf-st-n6s" firstAttribute="centerY" secondItem="rM7-K3-C9o" secondAttribute="centerY" id="B7H-Lk-IC0"/>
+                                    <constraint firstItem="m1d-3l-kIh" firstAttribute="width" secondItem="rM7-K3-C9o" secondAttribute="width" multiplier="0.24" id="GEE-Vu-QTz"/>
+                                    <constraint firstAttribute="bottom" secondItem="m1d-3l-kIh" secondAttribute="bottom" constant="10" id="TBO-9T-W5Y"/>
+                                    <constraint firstItem="m1d-3l-kIh" firstAttribute="height" secondItem="rM7-K3-C9o" secondAttribute="height" multiplier="0.24" id="XY9-33-9iB"/>
+                                    <constraint firstItem="m1d-3l-kIh" firstAttribute="centerX" secondItem="rM7-K3-C9o" secondAttribute="centerX" id="gDL-VN-r5s"/>
+                                    <constraint firstItem="m1d-3l-kIh" firstAttribute="centerX" secondItem="rM7-K3-C9o" secondAttribute="centerX" id="pkp-D7-tUY"/>
+                                    <constraint firstItem="ZZf-st-n6s" firstAttribute="centerX" secondItem="rM7-K3-C9o" secondAttribute="centerX" id="wvO-kM-oAz"/>
+                                    <constraint firstItem="m1d-3l-kIh" firstAttribute="centerX" secondItem="rM7-K3-C9o" secondAttribute="centerX" id="zZs-tg-4zY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Os-dj-Noo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0Bj-Ye-AvK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="CPy-Pf-eJU" secondAttribute="top" constant="-5" id="D7E-yP-hot"/>
+                            <constraint firstItem="0Os-dj-Noo" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="OE4-CB-jKJ"/>
+                            <constraint firstItem="rM7-K3-C9o" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="W1D-uy-2jq"/>
+                            <constraint firstAttribute="bottom" secondItem="rM7-K3-C9o" secondAttribute="bottom" id="Ywq-eX-rhz"/>
+                            <constraint firstItem="0Os-dj-Noo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="eCe-DU-43a"/>
+                            <constraint firstItem="rM7-K3-C9o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hA6-4a-7h7"/>
+                            <constraint firstItem="rM7-K3-C9o" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="o4d-pJ-7rS"/>
+                            <constraint firstItem="0Os-dj-Noo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yAY-J6-E4w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="34.729064039408868"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heat" width="512" height="512"/>
+        <image name="warehouse" width="512" height="512"/>
+    </resources>
+</document>
